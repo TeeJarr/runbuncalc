@@ -1146,8 +1146,8 @@
         </div>
         <div aria-label="Import team" role="region">
             <fieldset class="note-button">
-                <legend align="center">Note</legend>
-                <button id="open-note">Open Notes</button>
+                <legend align="left">Note</legend>
+                <button id="open-note">Open</button
             </fieldset>
         </div>
         <div aria-label="Import team" role="region">
@@ -1702,6 +1702,50 @@
                 <button type="button" id="reset-trainer">Truck</button>
             </fieldset>
         </div>
+        <div>
+            <fieldset class="loggerBox">
+                <legend align="center">LOG OPTIONS</legend>
+                <div class="logOptions" align="center">
+                    <button id="show-logger">Show</button>
+                    <button id="remove-last">
+                        Remove Last
+                    </button>
+                    <button id="reset-turn">
+                        Reset Battle
+                    </button>
+                </div>
+                <div>
+                    <hr>
+                </div>
+                <div class="moves" align="center">
+                    <button id="new-turn">
+                        Turn
+                    </button>
+                    <button id="turn-logger">
+                        Log
+                    </button>
+                    <select id="playerMoves" required onfocus="getMoves()">
+                        <option id="playerMove1" selected></option>
+                        <option id="playerMove2"></option>
+                        <option id="playerMove3"></option>
+                        <option id="playerMove4"></option>
+                        <option> None </option>
+                    </select>
+                    <select id="oppMoves" required onchange="getMoves()" onfocus="getMoves()">
+                        <option id="oppMove1" selected></option>
+                        <option id="oppMove2"></option>
+                        <option id="oppMove3"></option>
+                        <option id="oppMove4"></option>
+                        <option> None </option>
+                    </select>
+                </div>
+            </fieldset>
+            <div>
+                <fieldset class="loggerField" id="loggerField" hidden>
+                    <legend align="center">BATTLE LOGGER</legend>
+                </fieldset>
+            </div>
+        </div>
     </div>
     <div class="right-side-pannel side-pannel" hidden>
         <button data-set="i-f-o-type" class="r-side-button">
@@ -1853,6 +1897,7 @@
     <script type="text/javascript" src="./js/vendor/select2/select2.min.js"></script>
     <script type="text/javascript" src="./js/vendor/url-search-params-0.1.2.min.js"></script>
     <script type="text/javascript" src="./js/vendor/interact.min.js"></script>
+
     <script type="text/javascript">
         this.__createBinding = function(o, m, k) {
             o[k] = m[k];
@@ -1897,11 +1942,12 @@
     <script type="text/javascript" src="./js/shared_controls.js?89ed3199"></script>
     <script type="text/javascript" src="./js/index_randoms_controls.js?0a0407ae"></script>
     <script type="text/javascript" src="./js/moveset_import.js?a3935810"></script>
+    <script type="text/javascript" src="./js/logTurn.js" async="true" defer></script>
 </div>
 
-<div class="credits">Modification by ForwardFeed Originaly Created by Honko, maintained by Austin and Kris, Special thanks to Hzla
+<div class="credits">Modification by TeeJarr forked from ForwardFeed, Originaly Created by Honko, maintained by Austin and Kris, Special thanks to Hzla
     <ul>
-        <li><a href="https://github.com/ForwardFeed/runbuncalc" class="links-lighten" target="_blank">Modification Repository</a></li>
+        <li><a href="https://github.com/TeeJarr/runbuncalc" class="links-lighten" target="_blank">Modification Repository</a></li>
         <br>
         <li><a href="https://github.com/smogon/damage-calc/contributors" class="links-lighten" target="_blank">Smogon Contributors</a></li>
         <li><a href="https://www.smogon.com/forums/threads/pok%C3%A9mon-showdown-damage-calculator.3593546/" class="links-lighten" target="_blank">Smogon Bug Reports</a></li>
@@ -1910,6 +1956,7 @@
     <div id="sets">
         <button type="button" id="dark-theme-toggle"></button>
         <script type="text/javascript" src="./js/dark-theme-toggle.js?be118517"></script>
+
         <button id="side-arrow-toggle" data-id="true">Show Side Arrows</button>
         <button id="double-legacy-mode">Doubles Modern</button>
         <a href="runandbun_script_imports.lua" download="lua_script_for_export">Download Lua Script</a>
@@ -1926,7 +1973,7 @@
             </div>
           </div>
     </div>
-    <textarea cols="30" rows="10"></textarea>
+    <textarea cols="30" rows="10" id="fight-notes" onchange="getTextArea()"></textarea>
 </div>
 
 </body>
