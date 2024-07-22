@@ -5,21 +5,32 @@ a img {
 .header {
     margin: 0 0 30px 0;
 
-    background: #E5ECFB;
-    background: -webkit-gradient(linear, left top, left bottom, from(#E8EEFC), to(#D7DEEA));
-    background: -moz-linear-gradient(top,  #E8EEFC,  #D7DEEA);
-    background: linear-gradient(top,  #E8EEFC,  #D7DEEA);
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#E8EEFC', endColorstr='#D7DEEA');
+    background: #e5ecfb;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#e8eefc),
+        to(#d7deea)
+    );
+    background: -moz-linear-gradient(top, #e8eefc, #d7deea);
+    background: linear-gradient(top, #e8eefc, #d7deea);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E8EEFC', endColorstr='#D7DEEA');
 
-    border-bottom: 1px solid #AAA;
-    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .6), 0px 2px 2px rgba(0, 0, 0, .15);
+    border-bottom: 1px solid #aaa;
+    box-shadow:
+        inset 1px 1px 0 rgba(255, 255, 255, 0.6),
+        0px 2px 2px rgba(0, 0, 0, 0.15);
     min-height: 50px;
 }
 .header-inner {
     max-width: 605px;
     margin: 0 auto;
 }
-.nav, .nav li, .nav-play, .nav-play li {
+.nav,
+.nav li,
+.nav-play,
+.nav-play li {
     display: block;
     list-style: none;
     margin: 0;
@@ -50,9 +61,9 @@ a img {
 .nav .button.cur:hover {
     color: #777777;
     background: #f8f8f8;
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .nav .button.cur:hover {
     border: solid 1px #888888;
@@ -73,63 +84,120 @@ a img {
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    text-shadow: 0 1px 0 rgba(255,255,255,.4);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
     border-radius: 5px;
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2), inset 0 -1px 2px rgba(255,255,255,1);
-    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2), inset 0 -1px 2px rgba(255,255,255,1);
-    box-shadow: 0 1px 2px rgba(0,0,0,.2), inset 0 -1px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.2),
+        inset 0 -1px 2px rgba(255, 255, 255, 1);
+    -moz-box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.2),
+        inset 0 -1px 2px rgba(255, 255, 255, 1);
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.2),
+        inset 0 -1px 2px rgba(255, 255, 255, 1);
     white-space: nowrap;
 
     /* default colors */
     color: #222222;
-    border: solid 1px #AAAAAA;
+    border: solid 1px #aaaaaa;
     background: #e3e3e3;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e3e3e3));
-    background: -moz-linear-gradient(top,  #f6f6f6,  #e3e3e3);
-    background: linear-gradient(top,  #f6f6f6,  #e3e3e3);
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#e3e3e3');
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#f6f6f6),
+        to(#e3e3e3)
+    );
+    background: -moz-linear-gradient(top, #f6f6f6, #e3e3e3);
+    background: linear-gradient(top, #f6f6f6, #e3e3e3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#e3e3e3');
 }
 .button:hover {
     background: #cfcfcf;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#cfcfcf));
-    background: -moz-linear-gradient(top,  #f2f2f2,  #cfcfcf);
-    background: linear-gradient(top,  #f2f2f2,  #cfcfcf);
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#cfcfcf');
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#f2f2f2),
+        to(#cfcfcf)
+    );
+    background: -moz-linear-gradient(top, #f2f2f2, #cfcfcf);
+    background: linear-gradient(top, #f2f2f2, #cfcfcf);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#cfcfcf');
     border-color: #606060;
 }
 .button:active {
-    background: -webkit-gradient(linear, left top, left bottom, from(#cfcfcf), to(#f2f2f2));
-    background: -moz-linear-gradient(top,  #cfcfcf,  #f2f2f2);
-    background: linear-gradient(top,  #cfcfcf,  #f2f2f2);
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#cfcfcf', endColorstr='#f2f2f2');
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#cfcfcf),
+        to(#f2f2f2)
+    );
+    background: -moz-linear-gradient(top, #cfcfcf, #f2f2f2);
+    background: linear-gradient(top, #cfcfcf, #f2f2f2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cfcfcf', endColorstr='#f2f2f2');
 }
 
 .greenbutton {
-    background: hsl(100,30%,93%);
-    background: -webkit-gradient(linear, left top, left bottom, from(hsl(100,30%,97%)), to(hsl(100,30%,84%)));
-    background: -moz-linear-gradient(top,  hsl(100,30%,97%),  hsl(100,30%,84%));
-    background: linear-gradient(top,  hsl(100,30%,97%),  hsl(100,30%,84%));
-    border-color: hsl(100,30%,70%);
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#e3e3e3');
+    background: hsl(100, 30%, 93%);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(hsl(100, 30%, 97%)),
+        to(hsl(100, 30%, 84%))
+    );
+    background: -moz-linear-gradient(
+        top,
+        hsl(100, 30%, 97%),
+        hsl(100, 30%, 84%)
+    );
+    background: linear-gradient(top, hsl(100, 30%, 97%), hsl(100, 30%, 84%));
+    border-color: hsl(100, 30%, 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#e3e3e3');
 }
 .greenbutton:hover {
-    background: hsl(100,30%,87%);
-    background: -webkit-gradient(linear, left top, left bottom, from(hsl(100,30%,94%)), to(hsl(100,30%,77%)));
-    background: -moz-linear-gradient(top,  hsl(100,30%,94%),  hsl(100,30%,77%));
-    background: linear-gradient(top,  hsl(100,30%,94%),  hsl(100,30%,77%));
-    border-color: hsl(100,30%,41%);
+    background: hsl(100, 30%, 87%);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(hsl(100, 30%, 94%)),
+        to(hsl(100, 30%, 77%))
+    );
+    background: -moz-linear-gradient(
+        top,
+        hsl(100, 30%, 94%),
+        hsl(100, 30%, 77%)
+    );
+    background: linear-gradient(top, hsl(100, 30%, 94%), hsl(100, 30%, 77%));
+    border-color: hsl(100, 30%, 41%);
 }
 .greenbutton:active {
-    background: hsl(100,30%,77%);
-    background: -webkit-gradient(linear, left top, left bottom, from(hsl(100,30%,77%)), to(hsl(100,30%,83%)));
-    background: -moz-linear-gradient(top,  hsl(100,30%,77%),  hsl(100,30%,83%));
-    background: linear-gradient(top,  hsl(100,30%,77%),  hsl(100,30%,83%));
-    border-color: hsl(100,30%,41%);
+    background: hsl(100, 30%, 77%);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(hsl(100, 30%, 77%)),
+        to(hsl(100, 30%, 83%))
+    );
+    background: -moz-linear-gradient(
+        top,
+        hsl(100, 30%, 77%),
+        hsl(100, 30%, 83%)
+    );
+    background: linear-gradient(top, hsl(100, 30%, 77%), hsl(100, 30%, 83%));
+    border-color: hsl(100, 30%, 41%);
 }
 
 /* general page styling */
-html, body {
-    font: 10pt Verdana, sans-serif;
+html,
+body {
+    font:
+        10pt Verdana,
+        sans-serif;
     background-color: white;
     color: black;
     margin: 0;
@@ -138,7 +206,7 @@ html, body {
 }
 
 .trainer-poks-label {
-    margin:  10px 0px;
+    margin: 10px 0px;
 }
 
 .trainer-pok-list {
@@ -151,15 +219,16 @@ html, body {
     flex-wrap: wrap;
 }
 
-.trainer-pok{
-    height:  100%;
-    width:  auto;
-    margin-right:  10px;
+.trainer-pok {
+    height: 100%;
+    width: auto;
+    margin-right: 10px;
     cursor: pointer;
     box-sizing: border-box;
 }
 
-.trainer-pok:hover,  .opposite-pok:hover{
+.trainer-pok:hover,
+.opposite-pok:hover {
     outline: 2px solid;
     outline-color: #1abc9c;
 }
@@ -180,14 +249,15 @@ div.wrapper > div > span {
 }
 fieldset {
     float: left;
-    background-color: #F1F4F9;
-    border: 1px solid #AAAAAA;
+    background-color: #f1f4f9;
+    border: 1px solid #aaaaaa;
 }
 legend {
     font-weight: bold;
     text-align: center;
 }
-th, td {
+th,
+td {
     padding: 0;
 }
 th {
@@ -206,7 +276,8 @@ th {
     font-size: 1.1em;
     margin: 0.5em 0;
 }
-.big-text #mainResult:hover {  /* indicates the presence of click-to-copy function */
+.big-text #mainResult:hover {
+    /* indicates the presence of click-to-copy function */
     cursor: pointer;
     opacity: 0.7;
 }
@@ -231,7 +302,9 @@ th {
 .poke-info {
     width: 30em;
 }
-.field-info, .poke-import , .note-button{
+.field-info,
+.poke-import,
+.note-button {
     text-align: center;
     width: 27.5em;
 }
@@ -336,7 +409,8 @@ th {
     background: #ffff99;
 }
 
-.genSelection, .notationSelection {
+.genSelection,
+.notationSelection {
     display: inline-block;
     position: relative;
     top: -8px;
@@ -368,11 +442,14 @@ th {
     display: inline-block;
     width: 6em;
 }
-.top label, .info-selectors label {
+.top label,
+.info-selectors label {
     display: inline-block;
     width: 5em;
 }
-.poke-info input:not([type]), .poke-info input[type="text"], .poke-info span {
+.poke-info input:not([type]),
+.poke-info input[type="text"],
+.poke-info span {
     display: inline-block;
     width: 2.5em;
 }
@@ -392,7 +469,11 @@ th {
 select.toxic-counter {
     width: 5.5em;
 }
-.move-selector, .move-bp, .move-type, .move-cat, .move-hits {
+.move-selector,
+.move-bp,
+.move-type,
+.move-cat,
+.move-hits {
     font-size: 0.9em;
 }
 .move-selector {
@@ -424,10 +505,10 @@ select.toxic-counter {
     padding: 3px 3px;
 }
 .poke-info .max-btn {
-	font-size: 0.8em;
-	width: 2.5em;
-	height: 1em;
-	padding: 3px 3px;
+    font-size: 0.8em;
+    width: 2.5em;
+    height: 1em;
+    padding: 3px 3px;
 }
 
 /* field info */
@@ -438,7 +519,8 @@ table.field {
     width: 100%;
 }
 
-[hidden], .hide {
+[hidden],
+.hide {
     display: none;
 }
 
@@ -465,7 +547,7 @@ table.field {
 
 /* ColVis */
 .clear {
-  clear: right;
+    clear: right;
 }
 
 .import-team-text {
@@ -475,7 +557,7 @@ table.field {
 }
 
 .import-name-text {
-	min-width: 26.3em;
+    min-width: 26.3em;
     min-height: 1em;
     overflow: auto;
     display: inline;
@@ -502,7 +584,7 @@ table.field {
     border-top-color: #f8e379;
     background-color: #f5d538;
     border-bottom-color: #be9f0a;
-    border-right-color:#be9f0a;
+    border-right-color: #be9f0a;
 }
 
 .hpbar.hp-red {
@@ -515,7 +597,8 @@ table.field {
 .pool {
     padding: 15px 0;
 }
-.ability-pool, .move-pool  {
+.ability-pool,
+.move-pool {
     padding-bottom: 5px;
 }
 .extraSetAbilities,
@@ -526,101 +609,127 @@ table.field {
 
 /*
 
-    F = Faster 
+    F = Faster
     T = Speed tie
     S = slower
 */
-.mon-speed-F{
+.mon-speed-F {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: solid;
     border-color: #7ee1ff;
     border-radius: 20%;
-    border-width: var(--spe-bor-width)
+    border-width: var(--spe-bor-width);
 }
-.mon-speed-T{
+.mon-speed-T {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: solid;
     border-color: #894197;
     border-radius: 20%;
-    border-width: var(--spe-bor-width)
+    border-width: var(--spe-bor-width);
 }
-.mon-speed-S{
+.mon-speed-S {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: solid;
-    border-color: #1c1414;;
+    border-color: #1c1414;
     border-radius: 20%;
     border-width: var(--spe-bor-width);
 }
-.mon-speed-none{
-    border: none !important; 
+.mon-speed-none {
+    border: none !important;
 }
-.mon-dmg-none{
+.mon-dmg-none {
     background: var(--fieldset-color) !important;
 }
-.mon-dmg-W{
+.mon-dmg-W {
     /* Is considerable a wall*/
-    background: linear-gradient(to right, #0f0bf3 50%, var(--fieldset-color) 0%);
+    background: linear-gradient(
+        to right,
+        #0f0bf3 50%,
+        var(--fieldset-color) 0%
+    );
 }
-.mon-dmg-WMO{
+.mon-dmg-WMO {
     /* Is considerable a wall that may OHKO*/
-    background: linear-gradient(to right, #1295ec 50%, var(--fieldset-color) 0%);
+    background: linear-gradient(
+        to right,
+        #1295ec 50%,
+        var(--fieldset-color) 0%
+    );
 }
-.mon-dmg-4{
+.mon-dmg-4 {
     /*Gets OHKO*/
-    background: linear-gradient(to right, var(--fieldset-color) 50%, #dd0b0b 0%);
+    background: linear-gradient(
+        to right,
+        var(--fieldset-color) 50%,
+        #dd0b0b 0%
+    );
 }
-.mon-dmg-3{
+.mon-dmg-3 {
     /*maybe gets OHKO*/
-    background: linear-gradient(to right, var(--fieldset-color) 50%, #ff7f16 0%);
+    background: linear-gradient(
+        to right,
+        var(--fieldset-color) 50%,
+        #ff7f16 0%
+    );
 }
-.mon-dmg-1{
+.mon-dmg-1 {
     /*inflicts OHKO*/
-    background: linear-gradient(to right, #20d408 50%, var(--fieldset-color) 0%);
+    background: linear-gradient(
+        to right,
+        #20d408 50%,
+        var(--fieldset-color) 0%
+    );
 }
-.mon-dmg-2{
+.mon-dmg-2 {
     /*may inflicts OHKO*/
-    background: linear-gradient(to right, #daff08 50%, var(--fieldset-color) 0%);
+    background: linear-gradient(
+        to right,
+        #daff08 50%,
+        var(--fieldset-color) 0%
+    );
 }
 
-.mon-dmg-14{
+.mon-dmg-14 {
     /*both sides Gets OHKO*/
     background: linear-gradient(to right, #20d408 50%, #dd0b0b 0%);
 }
-.mon-dmg-23{
+.mon-dmg-23 {
     /*both sides might inflict OHKO*/
     background: linear-gradient(to right, #daff08 50%, #ff7f16 0%);
 }
-.mon-dmg-13{
+.mon-dmg-13 {
     /*inflict OHKO but may Gets OHKO*/
     background: linear-gradient(to right, #20d408 50%, #ff7f16 0%);
 }
-.mon-dmg-24{
+.mon-dmg-24 {
     /*may inflict OHKO but Gets OHKO*/
     background: linear-gradient(to right, #daff08 50%, #dd0b0b 0%);
 }
 
-.box-poke, #trainer-pok-list-opposing2, #trainer-pok-list-opposing{
+.box-poke,
+#trainer-pok-list-opposing2,
+#trainer-pok-list-opposing {
     min-height: 30px;
 }
-.dropzone::before{
-    content:attr(data-placeholder);
-    color:gray
+.dropzone::before {
+    content: attr(data-placeholder);
+    color: gray;
 }
 
-.deadzone:hover{
+.deadzone:hover {
     background: #722323;
 }
-.over{
+.over {
     background: #373232;
 }
 
-.s-arrow{
+.s-arrow {
     border: solid rgb(175, 155, 155);
     border-width: 0 3px 3px 0;
     display: inline-block;
@@ -628,7 +737,7 @@ table.field {
 }
 .arrowdown {
     transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 .arrowright {
     transform: rotate(-45deg);
@@ -636,52 +745,56 @@ table.field {
 }
 .arrowtop {
     transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
 }
-.arrowleft{
+.arrowleft {
     transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
-.l-side-button, .r-side-button{
+.l-side-button,
+.r-side-button {
     position: absolute;
 }
-.side-pannel{
+.side-pannel {
     display: grid;
     position: relative;
 }
-.left-side-pannel{
+.left-side-pannel {
     float: left;
 }
-.right-side-pannel{
+.right-side-pannel {
     float: none;
 }
 
-#p2mon, #p1mon, #monSingle, #monDouble{
+#p2mon,
+#p1mon,
+#monSingle,
+#monDouble {
     min-height: 30px;
 }
 
-.info-paragraph > b{
+.info-paragraph > b {
     color: rgb(15, 14, 14);
 }
-.info-paragraph > b:hover{
+.info-paragraph > b:hover {
     background: var(--fieldset-color);
     color: unset;
 }
 
-.box-frame{
+.box-frame {
     position: absolute;
     background: var(--fieldset-color);
-    border: 1px solid #AAA;
+    border: 1px solid #aaa;
     padding: 3px;
 }
-#item-box-frame{
+#item-box-frame {
     z-index: 3;
     width: 650px;
     height: 400px;
     top: 500px;
     left: 500px;
 }
-#note-box-frame{
+#note-box-frame {
     z-index: 2;
     width: fit-content;
     height: fit-content;
@@ -689,7 +802,7 @@ table.field {
     left: 1220px;
     overflow: visible;
 }
-.screen-box-frame{
+.screen-box-frame {
     position: absolute !important;
     z-index: 1;
     width: fit-content;
@@ -697,20 +810,20 @@ table.field {
     top: 250px;
     left: 500px;
 }
-.screen-box-frame-header{
+.screen-box-frame-header {
     position: relative;
     min-height: 30px;
 }
-.box-frame-header{
+.box-frame-header {
     position: relative;
     min-height: 30px;
 }
-.box-frame-header>legend{
+.box-frame-header > legend {
     font-size: larger;
     text-align: unset;
 }
 
-.close-frame{
+.close-frame {
     width: 25px;
     height: 25px;
     background-color: red;
@@ -722,89 +835,85 @@ table.field {
     cursor: pointer;
 }
 
-#close-item-box:hover{
+#close-item-box:hover {
     background-color: white;
     overflow: auto;
-    
 }
 
 .mdiv {
-  height: 25px;
-  width: 2px;
-  margin-left: 12px;
-  background-color: black;
-  transform: rotate(45deg);
-  Z-index: 4;
+    height: 25px;
+    width: 2px;
+    margin-left: 12px;
+    background-color: black;
+    transform: rotate(45deg);
+    z-index: 4;
 }
 
 .md {
-  height: 25px;
-  width: 2px;
-  background-color: black;
-  transform: rotate(90deg);
-  Z-index: 5;
+    height: 25px;
+    width: 2px;
+    background-color: black;
+    transform: rotate(90deg);
+    z-index: 5;
 }
 
-.box-item-list>img:hover{
+.box-item-list > img:hover {
     background: var(--button-hover);
 }
 
-
-.berry-bb{
-    background:#B8B8D0; 
-} 
-.berry-cr{
-    background:#B8A038;
-}   
-.berry-cl{
-    background:#A8A878;
-}   
-.berry-cp{
-    background:#C03028; 
-}   
-.berry-co{
-    background:#A890F0; 
-}   
-.berry-cb{
-    background:#705848; 
-}   
-.berry-ha{
-    background:#7038F8;
-}   
-.berry-ka{
-    background:#705898; 
-}   
-.berry-ke{
-    background:#A040A0; 
-}   
-.berry-oc{
-    background:#F08030;
-}   
-.berry-ps{
-    background:#6890F0;
-}   
-.berry-py{
-    background:#F85888;
-    
-}   
-.berry-ri{
-    background:#78C850;
-    
-}  
-.berry-ro{
-    background:#EE99AC; 
-}   
-.berry-sh{
-    background:#E0C068; 
-}   
-.berry-ta{
-    background:#A8B820; 
-}   
-.berry-wa{
-    background:#F8D030;
-}   
-.berry-ya{
-    background:#98D8D8; 
+.berry-bb {
+    background: #b8b8d0;
+}
+.berry-cr {
+    background: #b8a038;
+}
+.berry-cl {
+    background: #a8a878;
+}
+.berry-cp {
+    background: #c03028;
+}
+.berry-co {
+    background: #a890f0;
+}
+.berry-cb {
+    background: #705848;
+}
+.berry-ha {
+    background: #7038f8;
+}
+.berry-ka {
+    background: #705898;
+}
+.berry-ke {
+    background: #a040a0;
+}
+.berry-oc {
+    background: #f08030;
+}
+.berry-ps {
+    background: #6890f0;
+}
+.berry-py {
+    background: #f85888;
+}
+.berry-ri {
+    background: #78c850;
+}
+.berry-ro {
+    background: #ee99ac;
+}
+.berry-sh {
+    background: #e0c068;
+}
+.berry-ta {
+    background: #a8b820;
+}
+.berry-wa {
+    background: #f8d030;
+}
+.berry-ya {
+    background: #98d8d8;
 }
 
 #sets > a {
@@ -812,8 +921,31 @@ table.field {
     margin-right: 5px;
 }
 
-#screen-calc{
+#screen-calc {
     float: right;
     margin-top: 22px;
     margin-right: 41px;
+}
+
+.loggerBox {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 94%;
+}
+
+.loggerField {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 94%;
+}
+
+.fieldLoggerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
