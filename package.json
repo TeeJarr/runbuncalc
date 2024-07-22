@@ -1,7 +1,10 @@
 {
   "private": true,
   "homepage": "https://calc.pokemonshowdown.com/",
-  "repository": "github:smogon/damage-calc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smogon/damage-calc.git"
+  },
   "license": "MIT",
   "dependencies": {
     "@smogon/calc": "file:calc"
@@ -41,9 +44,18 @@
     "bundle": "subpkg run bundle",
     "build": "subpkg run build && node build view",
     "test": "subpkg run test && npm run build && eslint --cache src --ext js",
-    "postinstall": "subpkg install"
+    "postinstall": "subpkg install",
+    "start": "node server.js"
   },
   "subPackages": [
     "calc"
-  ]
+  ],
+  "name": "runbuncalc",
+  "version": "1.0.0",
+  "description": "![Test Status](https://github.com/smogon/damage-calc/workflows/Tests/badge.svg) [![npm version](https://img.shields.io/npm/v/@smogon/calc.svg)](https://www.npmjs.com/package/@smogon/calc)&nbsp;",
+  "main": "bundler.js",
+  "author": "Tristan Reynolds",
+  "bugs": {
+    "url": "https://github.com/smogon/damage-calc/issues"
+  }
 }
